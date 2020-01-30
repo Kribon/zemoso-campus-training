@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void merge(int arr[], int l, int m, int r) 
+void merge(long arr[], int l, int m, int r) 
 { 
     int i, j, k; 
     int n1 = m - l + 1; 
@@ -50,7 +50,7 @@ void merge(int arr[], int l, int m, int r)
     } 
 }
 
-void mergeSort(int arr[], int l, int r) 
+void mergeSort(long arr[], int l, int r) 
 { 
     if (l < r) 
     { 
