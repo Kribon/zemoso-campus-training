@@ -11,7 +11,7 @@ int main()
   int n;
   cin >>n; //take number of elements in array
   long arr[n];
-  vector<int> vec(n);
+  vector<long> vec(n);
   for(int i=0;i<n;i++)
   {
     cin>>arr[i];
