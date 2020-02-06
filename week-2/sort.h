@@ -1,8 +1,6 @@
-#include <iostream>
 
-using namespace std;
 
-void merge(int arr[], int l, int m, int r) 
+void merge(long arr[], int l, int m, int r) 
 { 
     int i, j, k; 
     int n1 = m - l + 1; 
@@ -50,7 +48,7 @@ void merge(int arr[], int l, int m, int r)
     } 
 }
 
-void mergeSort(int arr[], int l, int r) 
+void mergeSort(long arr[], int l, int r) 
 { 
     if (l < r) 
     { 
@@ -63,21 +61,4 @@ void mergeSort(int arr[], int l, int r)
     } 
 } 
 
-int main()
-{
-  int n;
-  cin >>n; //take number of elements in array
-  long arr[n];
-  
-  for(int i=0;i<n;i++)
-  {
-    cin>>arr[i];
-    }
-   mergeSort(arr,0,n-1);
-  
-  for(int i=0;i<n;i++) 
-  {
-   cout<<arr[i]<<' ';
-   }
-  return 0;
- }
+
