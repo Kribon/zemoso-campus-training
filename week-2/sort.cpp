@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "check.cpp"
+#include "check.h"
 
 using namespace std;
 
