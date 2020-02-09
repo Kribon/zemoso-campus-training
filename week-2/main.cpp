@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 #include "check.h"
 #include "sort.h"
@@ -11,16 +12,16 @@ int main()
   int n;
   cin >>n; //take number of elements in array
   long arr[n];
-  vector<long> vec(n);
+  vector<long> vec;
   for(int i=0;i<n;i++)
   {
     cin>>arr[i];
-    cin>>vec[i];
+    vec.push_back(arr[i]);
     }
    mergeSort(arr,0,n-1);
   // check for corectness of algorithm
   sort(vec.begin(),vec.end());
-  if(check(vec,arr)) 
+  if(qcheck(vec,arr)) 
      {
          cout<<"Your Algorithm is correct"<<endl;
          for(int i=0;i<n;i++) 
