@@ -1,6 +1,8 @@
-//do we need to include vector lib again??
+#include<vector>
 
-bool check(vector<long> sorted,long arr[])
+using namespace std;
+
+bool qcheck(vector<long> sorted,long arr[])
 {   
   for(int i=0;i<sorted.size();i++)
   {
