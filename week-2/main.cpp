@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include<chrono>
 
 #include "check.h"
 #include "sort.h"
@@ -9,6 +10,7 @@ using namespace std;
 
 int main()
 {
+  auto start=now();
   int n;
   cin >>n; //take number of elements in array
   long arr[n];
@@ -31,5 +33,8 @@ int main()
      }
      else 
        cout<<"Please check your Algorithm";
+  auto end=now();
+  auto differ=end-strat;
+  cout << chrono::duration <double, milli> (differ).count() << " ms" << endl;
   return 0;
  }
