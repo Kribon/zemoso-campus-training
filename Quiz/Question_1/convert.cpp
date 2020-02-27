@@ -15,16 +15,13 @@ string tens[] = { "", "", "twenty ", "thirty ", "forty ",
                  "ninety "
                }; 
   
-string convert(unsigned long n){
-    if(n==0) {
-        return "Zero";
-    }
+string convert long n){
     if(n<20) {
         return ones[n];
     }
     if(n<100) {
         
-        return tens[n/10] + ((n%10!=0)?" ":"") + convert(n%100);
+        return tens[n/10] + ((n%10!=0)?" ":"") + convert(n%10);
     }
     if(n<1000) {
             return ones[n / 100] + " hundred" + ((n % 100 != 0) ? " " : "") + convert(n % 100);
