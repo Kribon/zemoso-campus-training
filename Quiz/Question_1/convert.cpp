@@ -15,10 +15,7 @@ string tens[] = { "", "", "twenty ", "thirty ", "forty ",
                  "ninety "
                }; 
   
-string convert(long n){
-    if(n<0) {
-        return "Enter a positive number";
-    }
+string convert(unsigned long n){
     if(n==0) {
         return "Zero";
     }
