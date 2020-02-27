@@ -1,3 +1,3 @@
 #include <iostream>
 using namespace std;
-string convert(unsigned long n);
+string convert( long n);
