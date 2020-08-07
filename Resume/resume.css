@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 2.5px 5px;
+    font-family: sans-serif;
+}
+body
+{
+    background: #efeeff;
+}
+.complete
+{
+    width: 100%;
+    overflow: auto;
+}
+.Insti_img 
+{
+    width: 20%;
+    height: auto;
+    
+    
+}
+.Insti_img img
+{
+    width: 100px;
+    height: auto;
+    align-content: center;
+}
+.Profile_info
+{
+    float:left;
+    width: 45%; 
+    height:auto;
+    margin-left:110px;
+    margin-top:-110px;
+    padding: 5px 0px 0px;
+}
+.Profile_info h2
+{
+   font-family: sans-serif;
+   align-content: flex-start;
+    
+}
+.Profile_info p
+{
+   font-family: sans-serif;
+   align-content: flex-start;
+    
+}
+
+.Contact_info
+{
+    float: right ;
+    width: 35%; 
+    height:auto;
+    margin-top: -90px;
+    padding: 0px 20px 0px;
+}
+.Contact_info p
+{
+   font-family: sans-serif;
+   align-content: flex-end;
+    text-align: right;
+}
+
+hr
+{
+    height: 0.01%;
+    color: black;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+table
+{
+    border-style: inset;
+    width:90%;
+    align-content: center;
+    padding-left: 0px;
+    margin-left: 20px;
+    margin-top: 5px;    
+}
+table th
+{
+    border-style: solid;
+    border-width: 0.1px;
+    text-align: center;
+    
+}
+table td
+{
+    border-style: solid;
+    border-width: 0.1px;
+    text-align: center;
+}
+
+.project_head
+{
+    margin-left: 40px;
+   
+   
+}
+.project_head li
+{
+    font-weight: bold;
+    list-style: outside;
+}
+ 
+.project_des
+{
+    margin-left: 20px;
+    
+}
+.project_des li
+{
+    font-weight:normal;
+    list-style:unset;
+}
+p1
+{
+    font-style: italic;
+}
+p2
+{   
+    float: right;
+    font-style: italic;
+    font-weight: normal;
+    text-align:right;
+    
+}
+.techskill
+{
+    margin-left: 40px;
+}
+.techskill li
+{
+    font-weight: bold;
+   
+}
+p3
+{
+    font-weight: normal;
+    
+}
+.courses
+{
+  margin-left: 40px;  
+}
+
+.courses li
+{
+    font-weight: normal;
+}
+.PoR
+{
+   margin-left: 40px; 
+    font-weight: bold;
+}
+.PoR_desc
+{
+   margin-left: 20px; 
+    font-weight: normal;
+}
+.Extra
+{
+   margin-left: 40px; 
+}
