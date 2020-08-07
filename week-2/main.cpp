@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include<chrono>
 
 #include "check.h"
 #include "sort.h"
@@ -8,19 +10,20 @@ using namespace std;
 
 int main()
 {
+  auto start=now();
   int n;
   cin >>n; //take number of elements in array
   long arr[n];
-  vector<long> vec(n);
+  vector<long> vec;
   for(int i=0;i<n;i++)
   {
     cin>>arr[i];
-    cin>>vec[i];
+    vec.push_back(arr[i]);
     }
    mergeSort(arr,0,n-1);
   // check for corectness of algorithm
   sort(vec.begin(),vec.end());
-  if(check(vec,arr)) 
+  if(qcheck(vec,arr)) 
      {
          cout<<"Your Algorithm is correct"<<endl;
          for(int i=0;i<n;i++) 
@@ -30,5 +33,8 @@ int main()
      }
      else 
        cout<<"Please check your Algorithm";
+  auto end=now();
+  auto differ=end-strat;
+  cout << chrono::duration <double, milli> (differ).count() << " ms" << endl;
   return 0;
  }
